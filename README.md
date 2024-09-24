@@ -11,7 +11,7 @@ npm install
 node index.js
 ```
 
-note how the function hangs at `Making requests...`.
+note how the `stripe.customers.create` function hangs.
 
 if you install [`nock@14.0.0-beta.7`](https://github.com/nock/nock/tree/v14.0.0-beta.7) or [`nock@latest`](https://github.com/nock/nock/tree/v13.5.5), the stripe SDK will successfully make the request:
 
