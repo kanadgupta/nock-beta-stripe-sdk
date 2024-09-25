@@ -1,6 +1,7 @@
 {
   "author": "Kanad Gupta",
   "dependencies": {
+    "@mswjs/interceptors": "^0.35.8",
     "nock": "^14.0.0-beta.14",
     "stripe": "^16.12.0"
   },
