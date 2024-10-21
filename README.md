@@ -1,6 +1,6 @@
 # issue with `stripe` and `nock@beta`
 
-this repository demostrates an issue (https://github.com/nock/nock/issues/2785) where API requests from [the stripe SDK](https://github.com/stripe/stripe-node) aren't being intercepted by [`nock@beta`](https://github.com/nock/nock/tree/beta), nor its underlying interceptor library ([`@mswjs/interceptors`](https://github.com/mswjs/interceptors)).
+this repository demostrates an issue (https://github.com/nock/nock/issues/2785, https://github.com/stripe/stripe-node/issues/2211) where API requests from [the stripe SDK](https://github.com/stripe/stripe-node) aren't being intercepted by [`nock@beta`](https://github.com/nock/nock/tree/beta), nor its underlying interceptor library ([`@mswjs/interceptors`](https://github.com/mswjs/interceptors)).
 
 ## reproduction steps
 
