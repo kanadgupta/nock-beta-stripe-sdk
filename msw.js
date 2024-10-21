@@ -1,5 +1,3 @@
-import { makeRequest } from "./request.js";
-
 import { BatchInterceptor } from "@mswjs/interceptors";
 import nodeInterceptors from "@mswjs/interceptors/presets/node";
 
@@ -11,10 +9,7 @@ const interceptor = new BatchInterceptor({
 // Intercept Stripe API request
 interceptor.apply();
 
-await makeRequest();
-
 interceptor.on("request", ({ controller, request }) => {
-  console.log(request.method, request.url);
   controller.respondWith(
     new Response(
       JSON.stringify({
@@ -31,3 +26,7 @@ interceptor.on("request", ({ controller, request }) => {
     )
   );
 });
+
+const { makeRequest } = await import("./request.js");
+
+await makeRequest();
