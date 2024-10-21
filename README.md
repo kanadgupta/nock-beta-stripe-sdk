@@ -21,7 +21,9 @@ npm install nock@14.0.0-beta.7
 node nock.js
 ```
 
-another workaround: configure the stripe SDK to use [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) by making the following change in `request.js`:
+## workaround
+
+configure the stripe SDK to use [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) by making the following change in `request.js`:
 
 ```diff
 -const stripe = new Stripe("your-stripe-secret-key");
