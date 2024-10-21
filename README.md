@@ -1,4 +1,4 @@
-# issue with `nock@beta` and `@mswjs/interceptors`
+# issue with `stripe` and `@mswjs/interceptors`
 
 this repository demostrates an issue (https://github.com/nock/nock/issues/2785) with [`nock@14.0.0-beta.14`](https://github.com/nock/nock/tree/v14.0.0-beta.14) where API requests from [the stripe SDK](https://github.com/stripe/stripe-node) aren't being intercepted.
 
