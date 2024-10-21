@@ -20,3 +20,10 @@ if you install [`nock@14.0.0-beta.7`](https://github.com/nock/nock/tree/v14.0.0-
 npm install nock@14.0.0-beta.7
 node nock.js
 ```
+
+another workaround: configure the stripe SDK to use [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) by making the following change in `request.js`:
+
+```diff
+-const stripe = new Stripe("your-stripe-secret-key");
++const stripe = new Stripe("your-stripe-secret-key", { httpClient: Stripe.createFetchHttpClient() });
+```
